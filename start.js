@@ -7,7 +7,7 @@ inquirer.prompt([
     type: 'list',
     name: 'app',
     message: 'Which application you will develop?',
-    choices: ['publisher', 'platform']
+    choices: [/* app names */]
   }
 ]).then(function (answers) {
   try{

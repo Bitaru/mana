@@ -13,7 +13,7 @@ inquirer.prompt([
   try{
     if(answers.build === 'packages') require('./scripts/packages').build();
     if(answers.build === 'dlls') {
-      shell.exec(`cross-env BUILDING_DLL=true webpack --display-chunks --color --config .bin/webpack/webpack.dll.babel.js`);
+      shell.exec(`cross-env BUILDING_DLL=true webpack --display-chunks --color --config ./webpack/webpack.dll.babel.js`);
     }
     if(answers.build === 'app') {
       inquirer.prompt([
